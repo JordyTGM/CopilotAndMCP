@@ -150,6 +150,10 @@ app.delete("/mcp", async (req: Request, res: Response) => {
   );
 });
 
+app.get("/", (_req, res) => {
+  res.send("Servidor MCP en funcionamiento 🚀");
+});
+
 // Start the server
 const PORT = process.env.PORT || 3000;
 setupServer()
